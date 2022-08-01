@@ -1,0 +1,22 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Nos produits - OM Sport{% endblock %}
+
+{% block content %}
+    <div class="row">
+        <div class="col-md-3">
+            <H3>Filtrer</H3>
+            {{ form(form) }}
+        </div>
+     <div class="col-md-9">
+            <H1>Nos Produits</H1>
+        <div class="row product-container">
+            {% for product in products %}
+                <div class="col-md-4">
+                    {{ include('product/single_product.html.twig') }}
+                </div>
+            {% endfor %}
+        </div>
+     </div>
+    </div>
+{% endblock %}

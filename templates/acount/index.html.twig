@@ -1,0 +1,37 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Mon compte - OM Sport{% endblock %}
+
+{% block content %}
+
+    <h1>Mon compte ✅</h1>
+    {% if is_granted('ROLE_ADMIN') %}
+        <small><a href="/admin">Vous êtes un administrateur, accéder au Backoffice<br></a></small>
+    {% endif %}
+    Bienvenue {{ app.user.FirstName }} dans votre compte.<br> C'est dans cette espace que vous allez pouvoir gérer toutes vos informations personnelles.
+    <hr>
+
+
+    <div class="row">
+        <div class="col-md-4">
+            <div class="account-item text-center">
+                <img src="{{ asset('assets/icons/password.png') }}" alt="Modifier mon mot de passe"><br/>
+                <a href="{{ path('app_account_password') }}">Modifier mon mot de passe</a>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="account-item text-center">
+                <img src="{{ asset('assets/icons/adress.png') }}" alt="Gérer mes adresses"><br/>
+                <a href="{{ path('app_account_adress') }}">Gerer mes adresses</a>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="account-item text-center">
+                <img src="{{ asset('assets/icons/cart.png') }}" alt="Mes commandes"><br/>
+                <a href="{{ path('app_account_order') }}">Mes commandes</a>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+{% endblock %}

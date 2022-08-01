@@ -1,0 +1,29 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Gerer Mes Adresses - OM Sport{% endblock %}
+
+{% block content %}
+
+
+<div class="example-wrapper">
+
+    <a href="{{ path('app_account_adress') }}">Retour</a><hr/><br/>
+    <h1>Gerer Mes Adresses ✅</h1><br>
+    {{ form_start(form) }}
+    <div class="row">
+        <div class="col-md-12">{{ form_row(form.name) }}</div>
+        <div class="col-md-6">{{ form_row(form.firstname) }}</div>
+        <div class="col-md-6">{{ form_row(form.lastname) }}</div>
+        <div class="col-md-6">{{ form_row(form.company) }}</div>
+        <div class="col-md-6">{{ form_row(form.adress) }}</div>
+        <div class="col-md-6">{{ form_row(form.codepostal) }}</div>
+        <div class="col-md-6">{{ form_row(form.commune) }}</div>
+        <div class="col-md-6">{{ form_row(form.pays) }}</div>
+        <div class="col-md-6">{{ form_row(form.telephone) }}</div>
+
+    </div>
+
+
+    {{ form_end(form) }}
+
+    {% endblock %}

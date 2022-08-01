@@ -1,0 +1,113 @@
+
+
+<!--{% block  Title%}Page d'accueil - OM Sport{% endblock %}-->
+
+
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="la boutique qui vent seulement les made in Tunisia">
+        <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+        <meta name="generator" content="Jekyll v4.1.1">
+
+
+        <link href="{{ asset('assets/css/bootstrap.min.css') }}" rel="stylesheet">
+        <link href="{{ asset('assets/css/boutique.css') }}" rel="stylesheet">
+
+<style>
+    body{
+        background-color: #F2F3F4;
+    }
+    .center
+    {
+        position: unset;
+        display: table;
+        margin: auto;
+        padding: 100px;
+
+        width:100%;
+        height:70%;
+        background-color:#F2F3F4;
+    }
+
+    .footer-custom1
+    {
+
+        text-align: center;
+        width: 100%;
+        margin-top: 10%;
+        background-color: #dfeaff;
+
+    }
+</style>
+
+
+
+
+        <!-- Custom styles for this template -->
+
+    </head>
+{% block content %}
+    <!--<header>
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+            <!--   <div style="width: 40%; height: 10%">
+            <img width="20%" height="50px" src="{{ asset('assets/icons/logo1.png') }}">
+
+        </div>
+
+            <a class="navbar-brand" href="{{ path('app_home') }}"><h3> OM Sport</h3></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse" style="width: 100%">
+
+
+
+
+            </div>
+        </nav>
+    </header>-->
+<div class="center text-center">
+    <table class="table table-borderless" style="width: 30%">
+
+        <tbody>
+        <tr>
+            <th >Développeur :</th>
+            <td>- DRIDI Haithem</td>
+
+
+        </tr>
+        <tr>
+            <th >Type de l'application :</th>
+            <td>- E-commerce</td>
+        </tr>
+        <tr>
+            <th >Framework :</th>
+            <td>- Symfony 5.4.10</td>
+        </tr>
+        <tr>
+            <th >Technologies utilisées :</th>
+            <td>- PHP 7.2.5<br/>- twig<br/>- html<br/>- Bootstrap/CSS<br/>- javaScript<br/>- Git</td>
+        </tr>
+        <tr>
+            <th >Hébergement :</th>
+            <td>- Azure Cloud</td>
+        </tr>
+
+
+
+        </tbody>
+    </table><hr/>
+    <h4 style="text-align: center">Pour accéder à  l'application<a href="{{ path('app_home') }}" class="btn btn-link">cliquez ici</a></h4>
+</div>
+
+
+    <footer class="footer-custom1">
+        <!-- <p class="float-right"><a href="#">Back to top</a></p>-->
+        <p>
+            &copy; 2022 DRIDI Haithem<br/>
+            <small> OM Sport 100% made in TUNISIA &nbsp;&nbsp;&nbsp;&nbsp; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p></small>
+    </footer>
+
+{% endblock %}
